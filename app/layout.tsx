@@ -1,18 +1,19 @@
-import './global.css';
+import "./global.css";
 
 export const metadata = {
-  title: 'NextGram',
+  title: "NextGram",
   description:
-    'A sample Next.js app showing dynamic routing with modals as a route.',
+    "A sample Next.js app showing dynamic routing with modals as a route.",
 };
 
-export default function RootLayout(props: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html>
       <body>
-        {props.children}
+        <div className="layout">
+          <h1>Root layout</h1>
+          {props.children}
+        </div>
       </body>
     </html>
   );

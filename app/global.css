@@ -9,6 +9,18 @@ html {
   margin: 0;
 }
 
+.layout {
+  padding: 1rem;
+  border: 1px dashed red;
+  border-radius: 1rem;
+
+  &>h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
 .modal-backdrop {
   position: absolute;
   top: 0;
@@ -35,8 +47,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
-  font-weight: 500;
 }
 
 .close-button {
